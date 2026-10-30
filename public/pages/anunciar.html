@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anunciar veículo | AutoVendas</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/anunciar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">🚗</span>
+                <span>AutoVendas</span>
+            </a>
+
+            <nav class="nav">
+                <a href="../index.html">Início</a>
+                <a href="../index.html#veiculos">Comprar</a>
+                <a href="../index.html#categorias">Categorias</a>
+                <a href="anunciar.html">Vender</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="login.html" class="btn btn-outline">Entrar</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="announce-page">
+
+        <div class="container">
+
+            <div class="announce-heading">
+                <h1>Anuncie seu veículo</h1>
+                <p>Preencha os dados abaixo para cadastrar seu carro.</p>
+            </div>
+
+            <form id="announce-form" class="announce-card">
+
+                <section class="announce-section">
+
+                    <h2>Informações do veículo</h2>
+
+                    <div class="announce-grid">
+
+                        <div class="announce-field">
+                            <label for="marca">Marca</label>
+                            <input
+                                type="text"
+                                id="marca"
+                                name="marca"
+                                placeholder="Ex.: Toyota"
+                                required
+                            >
+                        </div>
+
+                        <div class="announce-field">
+                            <label for="modelo">Modelo</label>
+                            <input
+                                type="text"
+                                id="modelo"
+                                name="modelo"
+                                placeholder="Ex.: Corolla"
+                                required
+                            >
+                        </div>
+
+                        <div class="announce-field">
+                            <label for="versao">Versão</label>
+                            <input
+                                type="text"
+                                id="versao"
+                                name="versao"
+                                placeholder="Ex.: XEi 2.0"
+                            >
+                        </div>
+
+                        <div class="announce-field">
+                            <label for="ano">Ano</label>
+                            <input
+                                type="number"
+                                id="ano"
+                                name="ano"
+                                min="1900"
+                                max="2100"
+                                placeholder="Ex.: 2022"
+                                required
+                            >
+                        </div>
+
+                        <div class="announce-field">
+                            <label for="quilometragem">Quilometragem (km)</label>
+                            <input
+                                type="number"
+                                id="quilometragem"
+                                name="quilometragem"
+                                min="0"
+                                placeholder="Ex.: 35000"
+                                required
+                            >
+                        </div>
+
+                        <div class="announce-field">
+                            <label for="preco">Preço (R$)</label>
+                            <input
+                                type="number"
+                                id="preco"
+                                name="preco"
+                                min="1"
+                                step="0.01"
+                                placeholder="Ex.: 85000"
+                                required
+                            >
+                        </div>
+
+                        <div class="announce-field">
+                            <label for="cambio">Câmbio</label>
+                            <select id="cambio" name="cambio" required>
+                                <option value="">Selecione</option>
+                                <option value="Manual">Manual</option>
+                                <option value="Automático">Automático</option>
+                                <option value="CVT">CVT</option>
+                            </select>
+                        </div>
+
+                        <div class="announce-field">
+                            <label for="combustivel">Combustível</label>
+                            <select id="combustivel" name="combustivel" required>
+                                <option value="">Selecione</option>
+                                <option value="Flex">Flex</option>
+                                <option value="Gasolina">Gasolina</option>
+                                <option value="Diesel">Diesel</option>
+                                <option value="Etanol">Etanol</option>
+                                <option value="Híbrido">Híbrido</option>
+                                <option value="Elétrico">Elétrico</option>
+                            </select>
+                        </div>
+
+                        <div class="announce-field">
+                            <label for="categoria">Categoria</label>
+                            <select id="categoria" name="categoria" required>
+                                <option value="">Selecione</option>
+                                <option value="Sedan">Sedan</option>
+                                <option value="SUV">SUV</option>
+                                <option value="Hatch">Hatch</option>
+                                <option value="Picape">Picape</option>
+                                <option value="Esportivo">Esportivo</option>
+                            </select>
+                        </div>
+
+                        <div class="announce-field">
+                            <label for="cidade">Cidade</label>
+                            <input
+                                type="text"
+                                id="cidade"
+                                name="cidade"
+                                placeholder="Ex.: Blumenau - SC"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="announce-section">
+
+                    <h2>Descrição do veículo</h2>
+
+                    <div class="announce-field">
+                        <label for="descricao">Descreva seu veículo</label>
+                        <textarea
+                            id="descricao"
+                            name="descricao"
+                            rows="5"
+                            placeholder="Informe detalhes, opcionais, estado de conservação..."
+                            required
+                        ></textarea>
+                    </div>
+
+                </section>
+
+                <section class="announce-section">
+
+                    <h2>Foto do veículo</h2>
+
+                    <div class="announce-field">
+                        <label for="imagem">Selecione uma imagem</label>
+                        <input
+                            type="file"
+                            id="imagem"
+                            name="imagem"
+                            accept="image/*"
+                            required
+                        >
+                        <small>Selecione uma imagem no formato JPG, PNG ou WEBP.</small>
+                    </div>
+
+                    <img id="image-preview" class="image-preview" alt="Prévia do veículo">
+
+                </section>
+
+                <section class="announce-section">
+
+                    <h2>Informações do vendedor</h2>
+
+                    <div class="announce-grid">
+
+                        <div class="announce-field">
+                            <label for="vendedor-nome">Nome</label>
+                            <input
+                                type="text"
+                                id="vendedor-nome"
+                                name="vendedor-nome"
+                                placeholder="Seu nome"
+                                required
+                            >
+                        </div>
+
+                        <div class="announce-field">
+                            <label for="vendedor-telefone">Telefone / WhatsApp</label>
+                            <input
+                                type="tel"
+                                id="vendedor-telefone"
+                                name="vendedor-telefone"
+                                placeholder="(00) 00000-0000"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <button type="submit" class="btn btn-primary announce-button">
+                    Publicar anúncio
+                </button>
+
+                <p id="announce-message" class="announce-message" role="status"></p>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">
+                        <span class="logo-icon">🚗</span>
+                        <span>AutoVendas</span>
+                    </a>
+
+                    <p>Encontre seu próximo carro com facilidade e segurança.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Comprar</h3>
+                    <a href="../index.html#veiculos">Ver veículos</a>
+                    <a href="../index.html#categorias">Categorias</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Vender</h3>
+                    <a href="anunciar.html">Anunciar veículo</a>
+                    <a href="cadastro.html">Criar conta</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 AutoVendas. Todos os direitos reservados.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../js/anunciar.js"></script>
+
+</body>
+</html>

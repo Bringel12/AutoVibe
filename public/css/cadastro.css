@@ -1,0 +1,145 @@
+
+/* Página de cadastro */
+
+.register-page {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 20px;
+    background: var(--background);
+}
+
+.register-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 38px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.register-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.register-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: var(--secondary);
+    font-size: 28px;
+}
+
+.register-header h1 {
+    color: var(--primary-dark);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.register-header p {
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.register-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 17px;
+}
+
+.register-field label {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.register-field input {
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.register-field input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(23, 105, 170, 0.12);
+}
+
+.register-terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin: 20px 0;
+    color: var(--text-light);
+    font-size: 12px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.register-terms input {
+    margin-top: 2px;
+    accent-color: var(--primary);
+}
+
+.register-button {
+    width: 100%;
+    min-height: 48px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.register-message {
+    display: none;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.register-message.visible {
+    display: block;
+    color: #854D0E;
+    background: #FEF9C3;
+    border: 1px solid #FDE68A;
+}
+
+.register-login {
+    margin-top: 25px;
+    text-align: center;
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.register-login a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-login a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .register-page {
+        padding: 30px 15px;
+    }
+
+    .register-card {
+        padding: 25px 20px;
+    }
+}

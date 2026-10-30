@@ -1,0 +1,191 @@
+
+/* TABLETS */
+
+@media (max-width: 992px) {
+
+    .nav {
+        gap: 15px;
+    }
+
+    .nav a {
+        font-size: 11px;
+    }
+
+    .header-actions {
+        gap: 10px;
+    }
+
+    .header-actions .btn {
+        padding: 11px 13px;
+        font-size: 12px;
+    }
+
+    .hero-content {
+        gap: 20px;
+    }
+
+    .hero-image {
+        height: 280px;
+    }
+
+    .search-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vehicles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* CELULARES */
+
+@media (max-width: 650px) {
+
+    .header-content {
+        min-height: 70px;
+    }
+
+    .header-actions {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: var(--shadow);
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .nav a {
+        font-size: 14px;
+        padding: 7px 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero-image {
+        height: 220px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .search-section {
+        margin-top: -20px;
+    }
+
+    .search-box {
+        padding: 20px;
+    }
+
+    .search-form {
+        grid-template-columns: 1fr;
+    }
+
+    .search-button {
+        width: 100%;
+    }
+
+    .categories-section,
+    .vehicles-section {
+        padding-top: 50px;
+    }
+
+    .section-header h2 {
+        font-size: 22px;
+    }
+
+    .section-header {
+        gap: 15px;
+    }
+
+    .categories-grid {
+        gap: 10px;
+    }
+
+    .category-card {
+        padding: 18px 12px;
+    }
+
+    .vehicles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-image {
+        height: 230px;
+    }
+
+    .sell-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sell-content h2 {
+        font-size: 25px;
+    }
+
+    .sell-icon {
+        display: none;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* CELULARES PEQUENOS */
+
+@media (max-width: 380px) {
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+}

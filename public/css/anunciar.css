@@ -1,0 +1,156 @@
+
+/* Página de anúncio */
+
+.announce-page {
+    padding: 50px 0 70px;
+    background: var(--background);
+}
+
+.announce-heading {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.announce-heading h1 {
+    margin-bottom: 10px;
+    color: var(--primary-dark);
+    font-size: 30px;
+}
+
+.announce-heading p {
+    color: var(--text-light);
+    font-size: 15px;
+}
+
+.announce-card {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 35px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.announce-section {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+}
+
+.announce-section h2 {
+    margin-bottom: 25px;
+    color: var(--primary-dark);
+    font-size: 19px;
+}
+
+.announce-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.announce-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.announce-field label {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.announce-field input,
+.announce-field select,
+.announce-field textarea {
+    width: 100%;
+    min-height: 46px;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+    background: var(--white);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.announce-field textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.announce-field input:focus,
+.announce-field select:focus,
+.announce-field textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(23, 105, 170, 0.12);
+}
+
+.announce-field small {
+    color: var(--text-light);
+    font-size: 12px;
+}
+
+.image-preview {
+    display: none;
+    width: 100%;
+    max-width: 350px;
+    max-height: 220px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.image-preview.visible {
+    display: block;
+}
+
+.announce-button {
+    width: 100%;
+    min-height: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.announce-message {
+    display: none;
+    margin-top: 18px;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.announce-message.visible {
+    display: block;
+    color: #854D0E;
+    background: #FEF9C3;
+    border: 1px solid #FDE68A;
+}
+
+@media (max-width: 650px) {
+    .announce-page {
+        padding: 30px 0 45px;
+    }
+
+    .announce-heading h1 {
+        font-size: 24px;
+    }
+
+    .announce-card {
+        padding: 22px 17px;
+    }
+
+    .announce-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .announce-section h2 {
+        font-size: 17px;
+    }
+}

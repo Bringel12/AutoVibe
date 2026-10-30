@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="AutoVendas - Confira os detalhes do veículo.">
+
+    <title>Detalhes do veículo | AutoVendas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+<link rel="stylesheet" href="../css/detalhes.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">A</span>
+                <span>Auto<span>Vendas</span></span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <a href="../index.html#inicio">Início</a>
+                <a href="../index.html#veiculos" class="active">Comprar carros</a>
+                <a href="../index.html#categorias">Categorias</a>
+                <a href="../index.html#anunciar">Vender meu carro</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="login.html" class="login-link">Entrar</a>
+
+                <a href="anunciar.html" class="btn btn-primary">
+                    Anunciar veículo
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- DETALHES DO VEÍCULO -->
+        <section class="detail-section">
+
+            <div class="container">
+
+                <div class="breadcrumb">
+                    <a href="../index.html">Início</a>
+                    <span>/</span>
+                    <a href="../index.html#veiculos">Comprar carros</a>
+                    <span>/</span>
+                    <span>Detalhes do veículo</span>
+                </div>
+
+                <div id="vehicle-detail">
+
+                    <p class="loading-message">
+                        Carregando informações do veículo...
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="../index.html" class="logo">
+                    <span class="logo-icon">A</span>
+                    <span>Auto<span>Vendas</span></span>
+                </a>
+
+                <p>
+                    Conectando pessoas aos veículos que combinam
+                    com suas jornadas.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Comprar</h3>
+                <a href="../index.html#veiculos">Ver veículos</a>
+                <a href="../index.html#categorias">Categorias</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Vender</h3>
+                <a href="anunciar.html">Anunciar veículo</a>
+                <a href="login.html">Minha conta</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>AutoVendas</h3>
+                <a href="../index.html#inicio">Sobre o projeto</a>
+                <a href="../index.html#inicio">Contato</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 AutoVendas. Todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="../js/carros.js"></script>
+    <script src="../js/detalhes.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

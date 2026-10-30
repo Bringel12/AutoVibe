@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="AutoVendas - Encontre seu próximo carro. Confira anúncios de veículos novos e seminovos.">
+
+    <title>AutoVendas | Encontre seu próximo carro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">A</span>
+                <span>Auto<span>Vendas</span></span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <a href="#inicio" class="active">Início</a>
+                <a href="#veiculos">Comprar carros</a>
+                <a href="#categorias">Categorias</a>
+                <a href="#anunciar">Vender meu carro</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="pages/login.html" class="login-link">Entrar</a>
+                <a href="pages/anunciar.html" class="btn btn-primary">
+                    Anunciar veículo
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="hero" id="inicio">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="hero-tag">SEU PRÓXIMO CARRO ESTÁ AQUI</span>
+
+                    <h1>
+                        Encontre o carro ideal para sua próxima
+                        <span>jornada.</span>
+                    </h1>
+
+                    <p>
+                        Milhares de oportunidades para você comprar
+                        ou vender seu veículo com praticidade.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#veiculos" class="btn btn-primary">
+                            Explorar veículos
+                        </a>
+
+                        <a href="#anunciar" class="btn btn-outline">
+                            Quero vender
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1100&q=85"
+                        alt="Carro moderno em destaque"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PESQUISA -->
+        <section class="search-section">
+
+            <div class="container">
+
+                <div class="search-box">
+
+                    <div class="search-title">
+                        <h2>Encontre seu veículo</h2>
+                        <p>Utilize os filtros para encontrar o carro ideal.</p>
+                    </div>
+
+                    <form id="search-form" class="search-form">
+
+                        <div class="form-group">
+                            <label for="marca">Marca</label>
+
+                            <select id="marca">
+                                <option value="">Todas as marcas</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Chevrolet">Chevrolet</option>
+                                <option value="Honda">Honda</option>
+                                <option value="Hyundai">Hyundai</option>
+                                <option value="Fiat">Fiat</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preco">Preço máximo</label>
+
+                            <select id="preco">
+                                <option value="">Qualquer preço</option>
+                                <option value="50000">Até R$ 50 mil</option>
+                                <option value="80000">Até R$ 80 mil</option>
+                                <option value="100000">Até R$ 100 mil</option>
+                                <option value="150000">Até R$ 150 mil</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cidade">Localização</label>
+
+                            <input
+                                type="text"
+                                id="cidade"
+                                placeholder="Ex: Blumenau - SC"
+                            >
+                        </div>
+
+                        <button type="submit" class="btn btn-primary search-button">
+                            Buscar veículos
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section class="categories-section" id="categorias">
+
+            <div class="container">
+
+                <div class="section-header">
+                    <div>
+                        <span class="section-tag">EXPLORE</span>
+                        <h2>Encontre por categoria</h2>
+                    </div>
+                </div>
+
+                <div class="categories-grid">
+
+                    <a href="#veiculos" class="category-card">
+                        <span class="category-icon">🚗</span>
+                        <h3>Hatches</h3>
+                        <p>Compactos e econômicos</p>
+                    </a>
+
+                    <a href="#veiculos" class="category-card">
+                        <span class="category-icon">🚙</span>
+                        <h3>SUVs</h3>
+                        <p>Espaço e conforto</p>
+                    </a>
+
+                    <a href="#veiculos" class="category-card">
+                        <span class="category-icon">🚘</span>
+                        <h3>Sedãs</h3>
+                        <p>Elegância e desempenho</p>
+                    </a>
+
+                    <a href="#veiculos" class="category-card">
+                        <span class="category-icon">🏎️</span>
+                        <h3>Esportivos</h3>
+                        <p>Potência e velocidade</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VEÍCULOS -->
+        <section class="vehicles-section" id="veiculos">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+                        <span class="section-tag">OPORTUNIDADES</span>
+                        <h2>Veículos em destaque</h2>
+                        <p>Confira algumas oportunidades disponíveis.</p>
+                    </div>
+
+                    <a href="#veiculos" class="view-all">
+                        Ver todos →
+                    </a>
+
+                </div>
+
+                <div class="vehicles-grid" id="vehicles-grid">
+
+                    <!-- Os veículos serão inseridos pelo JavaScript -->
+
+                </div>
+
+                <p class="empty-message" id="empty-message" hidden>
+                    Nenhum veículo encontrado com os filtros selecionados.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANUNCIAR -->
+        <section class="sell-section" id="anunciar">
+
+            <div class="container sell-content">
+
+                <div>
+                    <span class="section-tag">VENDA SEU VEÍCULO</span>
+
+                    <h2>Seu carro merece encontrar o próximo dono.</h2>
+
+                    <p>
+                        Anuncie seu veículo no AutoVendas e encontre
+                        pessoas interessadas em comprar.
+                    </p>
+
+                    <a href="pages/anunciar.html" class="btn btn-light">
+                        Anunciar meu carro
+                    </a>
+                </div>
+
+                <div class="sell-icon">🚘</div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">A</span>
+                    <span>Auto<span>Vendas</span></span>
+                </a>
+
+                <p>
+                    Conectando pessoas aos veículos que combinam
+                    com suas jornadas.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Comprar</h3>
+                <a href="#veiculos">Ver veículos</a>
+                <a href="#categorias">Categorias</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Vender</h3>
+                <a href="pages/anunciar.html">Anunciar veículo</a>
+                <a href="pages/login.html">Minha conta</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>AutoVendas</h3>
+                <a href="#inicio">Sobre o projeto</a>
+                <a href="#inicio">Contato</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 AutoVendas. Todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="js/carros.js"></script>
+    <script src="js/filtros.js"></script>
+    <script src="js/favoritos.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | AutoVendas</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">A</span>
+                <span>AutoVendas</span>
+            </a>
+
+            <nav class="nav">
+                <a href="../index.html">Início</a>
+                <a href="../index.html#veiculos">Comprar</a>
+                <a href="../index.html#categorias">Categorias</a>
+                <a href="anunciar.html">Vender</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="cadastro.html" class="btn btn-outline">Criar conta</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="login-page">
+
+        <section class="login-card">
+
+            <div class="login-header">
+                <div class="login-icon">🚗</div>
+
+                <h1>Bem-vindo de volta!</h1>
+
+                <p>Entre na sua conta para continuar.</p>
+            </div>
+
+            <form id="login-form">
+
+                <div class="login-field">
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+                </div>
+
+                <div class="login-field">
+                    <label for="senha">Senha</label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        minlength="6"
+                        required
+                    >
+                </div>
+
+                <div class="login-options">
+
+                    <label class="remember-option">
+                        <input type="checkbox" id="manter-conectado">
+                        <span>Manter conectado</span>
+                    </label>
+
+                    <a href="#" id="forgot-password">
+                        Esqueci minha senha
+                    </a>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary login-button">
+                    Entrar
+                </button>
+
+                <p id="login-message" class="login-message" role="status"></p>
+
+            </form>
+
+            <div class="login-divider">
+                <span>OU</span>
+            </div>
+
+            <p class="register-link">
+                Ainda não tem uma conta?
+                <a href="cadastro.html">Criar conta</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">
+                        <span class="logo-icon">🚗</span>
+                        <span>AutoVendas</span>
+                    </a>
+
+                    <p>Encontre seu próximo carro com facilidade e segurança.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Comprar</h3>
+                    <a href="../index.html#veiculos">Ver veículos</a>
+                    <a href="../index.html#categorias">Categorias</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Vender</h3>
+                    <a href="anunciar.html">Anunciar veículo</a>
+                    <a href="cadastro.html">Criar conta</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 AutoVendas. Todos os direitos reservados.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../js/formularios.js"></script>
+
+</body>
+</html>

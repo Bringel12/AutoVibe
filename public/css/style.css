@@ -1,0 +1,624 @@
+
+/* =====================================
+   CONFIGURAÇÕES GERAIS
+===================================== */
+
+:root {
+    --primary: #1769AA;
+    --primary-dark: #102A43;
+    --secondary: #EAF3FA;
+    --background: #F5F7FA;
+    --white: #FFFFFF;
+    --text: #243447;
+    --text-light: #718096;
+    --border: #E2E8F0;
+    --success: #16A34A;
+
+    --radius: 12px;
+    --shadow: 0 5px 20px rgba(16, 42, 67, 0.07);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: #12558C;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 1px solid rgba(255,255,255,0.6);
+    color: var(--white);
+}
+
+.btn-outline:hover {
+    background: var(--white);
+    color: var(--primary-dark);
+}
+
+
+/* =====================================
+   CABEÇALHO
+===================================== */
+
+.header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 21px;
+    font-weight: 800;
+    color: var(--primary-dark);
+}
+
+.logo > span:last-child > span {
+    color: var(--primary);
+}
+
+.logo-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--primary);
+    color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav a {
+    font-size: 13px;
+    color: var(--text-light);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: var(--primary);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-link {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 27px;
+    color: var(--primary-dark);
+}
+
+
+/* =====================================
+   BANNER PRINCIPAL
+===================================== */
+
+.hero {
+    background: linear-gradient(120deg, #102A43, #174D78);
+    color: white;
+    overflow: hidden;
+}
+
+.hero-content {
+    min-height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.hero-tag,
+.section-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+    color: #64B5F6;
+}
+
+.hero-text h1 {
+    font-size: clamp(34px, 4vw, 49px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    max-width: 550px;
+}
+
+.hero-text h1 span {
+    color: #64B5F6;
+}
+
+.hero-text p {
+    color: #D5E4F0;
+    line-height: 1.8;
+    max-width: 470px;
+    font-size: 15px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.hero-image {
+    height: 340px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =====================================
+   PESQUISA
+===================================== */
+
+.search-section {
+    margin-top: -35px;
+    position: relative;
+    z-index: 2;
+}
+
+.search-box {
+    background: white;
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.search-title h2 {
+    font-size: 21px;
+    color: var(--primary-dark);
+}
+
+.search-title p {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-top: 7px;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 15px;
+    margin-top: 25px;
+    align-items: end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 46px;
+    padding: 0 12px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: white;
+    outline: none;
+    color: var(--text);
+    font-size: 13px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--primary);
+}
+
+.search-button {
+    height: 46px;
+}
+
+
+/* =====================================
+   SEÇÕES
+===================================== */
+
+.categories-section,
+.vehicles-section {
+    padding: 75px 0 35px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.section-header .section-tag {
+    color: var(--primary);
+    margin-bottom: 9px;
+}
+
+.section-header h2 {
+    font-size: 27px;
+    color: var(--primary-dark);
+}
+
+.section-header p {
+    color: var(--text-light);
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.view-all {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =====================================
+   CATEGORIAS
+===================================== */
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.category-card {
+    padding: 25px 18px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    border-color: var(--primary);
+}
+
+.category-icon {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.category-card h3 {
+    color: var(--primary-dark);
+    font-size: 16px;
+}
+
+.category-card p {
+    color: var(--text-light);
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+
+/* =====================================
+   VEÍCULOS
+===================================== */
+
+.vehicles-section {
+    padding-top: 55px;
+    padding-bottom: 85px;
+}
+
+.vehicles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.vehicle-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.vehicle-image {
+    position: relative;
+    height: 210px;
+    overflow: hidden;
+}
+
+.vehicle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.vehicle-card:hover .vehicle-image img {
+    transform: scale(1.05);
+}
+
+.vehicle-badge {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    padding: 6px 10px;
+    background: var(--primary);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #64748B;
+    display: grid;
+    place-items: center;
+}
+
+.favorite-btn.active {
+    color: #E11D48;
+}
+
+.vehicle-info {
+    padding: 19px;
+}
+
+.vehicle-info h3 {
+    font-size: 17px;
+    color: var(--primary-dark);
+    margin-bottom: 7px;
+}
+
+.vehicle-version {
+    font-size: 12px;
+    color: var(--text-light);
+}
+
+.vehicle-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 17px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.vehicle-details span {
+    font-size: 11px;
+    color: var(--text-light);
+}
+
+.vehicle-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.vehicle-price strong {
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.vehicle-price a {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.empty-message {
+    text-align: center;
+    color: var(--text-light);
+    padding: 40px 10px;
+}
+
+
+/* =====================================
+   ANUNCIAR
+===================================== */
+
+.sell-section {
+    background: var(--primary-dark);
+    color: white;
+    padding: 65px 0;
+}
+
+.sell-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.sell-content h2 {
+    font-size: 30px;
+    max-width: 560px;
+    line-height: 1.3;
+}
+
+.sell-content p {
+    color: #CBD5E1;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 540px;
+    margin: 15px 0 25px;
+}
+
+.sell-icon {
+    font-size: 100px;
+    opacity: 0.9;
+}
+
+.btn-light {
+    background: white;
+    color: var(--primary-dark);
+}
+
+.btn-light:hover {
+    background: #EAF3FA;
+}
+
+
+/* =====================================
+   RODAPÉ
+===================================== */
+
+.footer {
+    background: #0B1F33;
+    color: white;
+    padding-top: 55px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 35px;
+    padding-bottom: 45px;
+}
+
+.footer-brand .logo {
+    color: white;
+}
+
+.footer-brand p {
+    color: #A7B7C8;
+    font-size: 13px;
+    line-height: 1.8;
+    max-width: 280px;
+    margin-top: 17px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.footer-column h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    font-size: 12px;
+    color: #A7B7C8;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid #263D52;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-bottom p {
+    color: #A7B7C8;
+    font-size: 11px;
+}
